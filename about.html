@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Aurex Built Perspectives</title>
+  <meta name="description" content="Learn about Aurex Built Perspectives — independent editorial on architecture, interior design, materials, lighting, and modern living.">
+  <link rel="canonical" href="https://www.aurexbuiltperspectives.com/about.html">
+  <meta property="og:title" content="About | Aurex Built Perspectives">
+  <meta property="og:description" content="Independent editorial on architecture, interior design, and modern living.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.aurexbuiltperspectives.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Aurex Built Perspectives",
+    "url": "https://www.aurexbuiltperspectives.com/about.html",
+    "description": "Independent editorial on architecture, interior design, materials, lighting, and modern living."
+  }
+  </script>
+  <style>
+    /* --- RESET & BASE --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --paper: #faf9f7;
+      --stone: #e8e6e1;
+      --accent: #a67c52;
+      --accent-soft: #c9a87c;
+      --mid: #6b6b6b;
+      --rule: #d9d6d0;
+      --card-bg: #ffffff;
+      --serif: 'Georgia', 'Times New Roman', Times, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --reading-width: 720px;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.6;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* --- TYPOGRAPHY --- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.9rem; margin-bottom: 0.5rem; }
+    h3 { font-size: 1.35rem; margin-bottom: 0.4rem; }
+    h4 { font-size: 1.1rem; }
+
+    p {
+      margin-bottom: 1.2rem;
+      color: #2b2b2b;
+    }
+
+    .meta {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--mid);
+      font-weight: 500;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      border: 1px solid var(--accent-soft);
+      padding: 0.2rem 0.6rem;
+      border-radius: 0;
+      margin-bottom: 0.6rem;
+      background: transparent;
+    }
+
+    /* --- LAYOUT --- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* --- HEADER --- */
+    .site-header {
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+      padding: 1.2rem 0 0.8rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+
+    .logo-mark {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
+
+    .logo-mark span {
+      color: var(--accent);
+    }
+
+    .logo-sub {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--mid);
+      font-weight: 500;
+    }
+
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.2rem 1.2rem;
+    }
+
+    .main-nav a {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      color: var(--ink);
+      padding: 0.3rem 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--rule);
+      background: #fff;
+      padding: 0.3rem 0.7rem;
+      border-radius: 0;
+      margin-left: auto;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      padding: 0.3rem 0.2rem;
+      width: 180px;
+      background: transparent;
+    }
+
+    .search-bar button {
+      background: none;
+      border: none;
+      font-size: 0.9rem;
+      cursor: pointer;
+      color: var(--mid);
+      padding: 0 0.2rem;
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .search-bar {
+        width: 100%;
+        margin-left: 0;
+      }
+      .search-bar input {
+        width: 100%;
+      }
+      .main-nav ul {
+        gap: 0.5rem 0.9rem;
+      }
+    }
+
+    /* --- ABOUT PAGE CONTENT --- */
+    .about-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin: 3rem 0 4rem;
+    }
+
+    @media (max-width: 800px) {
+      .about-hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 2rem 0 3rem;
+      }
+    }
+
+    .about-hero-content h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .about-hero-content p {
+      font-size: 1.1rem;
+      color: #3a3a3a;
+      max-width: 90%;
+    }
+
+    .about-hero-image img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border: 1px solid var(--rule);
+    }
+
+    .about-section {
+      max-width: var(--reading-width);
+      margin: 0 auto 3.5rem;
+    }
+
+    .about-section h2 {
+      margin-bottom: 1.2rem;
+    }
+
+    .about-section h3 {
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-section p {
+      color: #2b2b2b;
+    }
+
+    .about-section blockquote {
+      border-left: 3px solid var(--accent-soft);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #3a3a3a;
+    }
+
+    .about-section ul, .about-section ol {
+      margin: 1.2rem 0 1.5rem 1.8rem;
+    }
+
+    .about-section li {
+      margin-bottom: 0.5rem;
+      color: #2b2b2b;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin: 2.5rem 0;
+    }
+
+    @media (max-width: 700px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1rem;
+    }
+
+    .team-member h4 {
+      margin-bottom: 0.2rem;
+    }
+
+    .team-member .role {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .team-member p {
+      font-size: 0.9rem;
+      color: #4a4a4a;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 600px) {
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .value-card {
+      background: var(--card-bg);
+      border: 1px solid var(--rule);
+      padding: 1.8rem 1.5rem;
+      transition: border-color 0.2s;
+    }
+
+    .value-card:hover {
+      border-color: var(--accent-soft);
+    }
+
+    .value-card h4 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .value-card p {
+      font-size: 0.92rem;
+      color: #3a3a3a;
+      margin-bottom: 0;
+    }
+
+    .legal-section {
+      background: #fff;
+      border: 1px solid var(--rule);
+      padding: 2rem;
+      margin: 2rem 0;
+      font-size: 0.88rem;
+    }
+
+    .legal-section h3 {
+      margin-bottom: 0.8rem;
+    }
+
+    .legal-section p {
+      color: #3a3a3a;
+      margin-bottom: 0.8rem;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2rem 0;
+    }
+
+    /* --- FOOTER --- */
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      padding: 3rem 0 1.5rem;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 700px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand p {
+      max-width: 280px;
+      font-size: 0.85rem;
+      color: var(--mid);
+    }
+
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+      color: var(--mid);
+    }
+
+    .footer-col ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      color: var(--mid);
+      font-size: 0.78rem;
+    }
+
+    @media (max-width: 500px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.5rem; }
+      .about-hero-content h1 { font-size: 2rem; }
+      .container { padding: 0 1rem; }
+      .legal-section { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-mark">Aurex<span>.</span></div>
+        <div class="logo-sub">Built Perspectives</div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search articles">
+        <button id="searchBtn" aria-label="Search">⌕</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container">
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <span class="section-label">About Us</span>
+        <h1>We write about the spaces that shape us.</h1>
+        <p>Aurex Built Perspectives is an independent editorial publication dedicated to architecture, interior design, and the built environment. We publish long-form articles, practical guides, and critical essays that help readers create spaces of lasting value.</p>
+      </div>
+      <div class="about-hero-image">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=900&fit=crop" alt="Modern living room with floor-to-ceiling windows and minimalist furniture, bathed in natural light">
+      </div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="about-section">
+      <h2>Our Mission</h2>
+      <p>We believe that good design is not a luxury but a necessity. It shapes how we live, work, and feel. Our mission is to demystify the design process, celebrate material honesty, and champion a slower, more thoughtful approach to building and decorating.</p>
+      <p>In a world saturated with fleeting trends, we focus on principles that endure: proportion, light, texture, and the quiet intelligence of restraint. We don't chase novelty for its own sake; we look for ideas that stand the test of time.</p>
+
+      <blockquote>“Architecture is the thoughtful making of space.” — Louis Kahn</blockquote>
+    </section>
+
+    <!-- WHAT WE COVER -->
+    <section class="about-section">
+      <span class="section-label">Coverage</span>
+      <h2>What We Cover</h2>
+      <p>Our editorial spans the full spectrum of the built environment, from the scale of a city to the grain of a material. We publish in-depth articles, interviews, and guides across these core areas:</p>
+      <ul>
+        <li><strong>Interior Design</strong> — spatial composition, colour, texture, and the psychology of home.</li>
+        <li><strong>Architecture</strong> — residential, cultural, and adaptive reuse projects, with a focus on climate response.</li>
+        <li><strong>Materials</strong> — from lime plaster and clay paint to engineered timber and recycled stone.</li>
+        <li><strong>Lighting</strong> — daylighting strategies, layered artificial light, and the technology behind great atmosphere.</li>
+        <li><strong>Space Planning</strong> — circulation, proportion, and the human dimensions of rooms.</li>
+        <li><strong>Furniture</strong> — timeless pieces, craftsmanship, and the ethics of buying well.</li>
+      </ul>
+    </section>
+
+    <!-- OUR VALUES -->
+    <section class="about-section">
+      <span class="section-label">Principles</span>
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h4>Independence</h4>
+          <p>We are not affiliated with any brand, developer, or institution. Our editorial decisions are made solely by our team.</p>
+        </div>
+        <div class="value-card">
+          <h4>Depth over speed</h4>
+          <p>We take time to research, interview, and refine. Every article is a considered piece, not a news snippet.</p>
+        </div>
+        <div class="value-card">
+          <h4>Material honesty</h4>
+          <p>We champion finishes and structures that age with grace, and we ask hard questions about sustainability.</p>
+        </div>
+        <div class="value-card">
+          <h4>Accessibility</h4>
+          <p>Design writing should be clear, not elitist. We explain concepts without jargon and welcome curious readers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="about-section">
+      <span class="section-label">People</span>
+      <h2>Who We Are</h2>
+      <p>Aurex Built Perspectives is produced by a small, distributed team of writers, editors, and researchers based in Milan, London, and New York.</p>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=256&h=256&fit=crop&crop=face" alt="Portrait of Elena Marchetti">
+          <h4>Elena Marchetti</h4>
+          <div class="role">Editor-in-Chief</div>
+          <p>Milan-based architecture and design writer. Contributor to Domus, Dezeen, and The Architectural Review.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=256&h=256&fit=crop&crop=face" alt="Portrait of Marcus Chen">
+          <h4>Marcus Chen</h4>
+          <div class="role">Senior Editor</div>
+          <p>Architect and journalist covering kinetic architecture, urbanism, and climate-resilient design.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=256&h=256&fit=crop&crop=face" alt="Portrait of Priya Nair">
+          <h4>Priya Nair</h4>
+          <div class="role">Materials Editor</div>
+          <p>Specialises in natural finishes, traditional building techniques, and the circular economy of construction.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL PROCESS -->
+    <section class="about-section">
+      <span class="section-label">Process</span>
+      <h2>How We Work</h2>
+      <p>Every article begins with a question. We then research widely, speak to practitioners, and visit projects wherever possible. Our writers work with editors through multiple drafts to ensure accuracy, clarity, and nuance.</p>
+      <p>We do not accept sponsored content disguised as editorial. When we partner with brands for advertising, it is clearly labelled and kept separate from our journalism. Our readers' trust is our most valuable asset.</p>
+      <p>If you have a story idea, a project you think deserves attention, or feedback on our work, we would love to hear from you. Visit our <a href="contact.html" style="color:var(--accent); text-decoration:underline;">contact page</a> to get in touch.</p>
+    </section>
+
+    <!-- LEGAL / INFO BLOCKS (same as homepage style) -->
+    <section id="about-summary" class="legal-section">
+      <h3>About Aurex Built Perspectives</h3>
+      <p>Aurex Built Perspectives is an independent editorial publication dedicated to architecture, interior design, and the built environment. We publish long-form articles, practical guides, and critical essays that help readers create spaces of lasting value. Our team is based in Milan, London, and New York.</p>
+    </section>
+
+    <section id="contact-summary" class="legal-section">
+      <h3>Contact</h3>
+      <p>Editorial inquiries: <strong>editors@aurexbuiltperspectives.com</strong><br>
+      Advertising & partnerships: <strong>partners@aurexbuiltperspectives.com</strong><br>
+      We welcome pitches and story ideas. Please allow up to five working days for a response.</p>
+    </section>
+
+    <section id="privacy-summary" class="legal-section">
+      <h3>Privacy Policy</h3>
+      <p>We respect your privacy. Aurex Built Perspectives collects minimal data necessary to improve your reading experience. We do not sell or share personal information with third parties. Email addresses provided for newsletters are stored securely and used solely for communication from our editorial team. You may unsubscribe at any time.</p>
+    </section>
+
+    <section id="terms-summary" class="legal-section">
+      <h3>Terms of Use</h3>
+      <p>All content on this website is for informational purposes only. While we strive for accuracy, architectural and design decisions should always involve qualified professionals. Reproduction of articles without permission is prohibited. Excerpts may be used with proper attribution and a link back to the original article.</p>
+    </section>
+
+    <section id="cookies-summary" class="legal-section">
+      <h3>Cookie Policy</h3>
+      <p>We use essential cookies to ensure basic site functionality and analytics cookies to understand how readers engage with our content. You can disable cookies in your browser settings. No personal data is shared with advertisers.</p>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-mark" style="font-size:1.4rem;">Aurex<span>.</span></div>
+          <p style="margin-top:0.8rem;">Independent editorial on architecture, interior design, and the art of living well. Published since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Aurex Built Perspectives. All rights reserved.</span>
+        <span>Made with restraint in Milan, London, and New York.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // ----- SEARCH FUNCTIONALITY (placeholder for consistency) -----
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+
+      function performSearch() {
+        const query = searchInput.value.trim();
+        if (query) {
+          // In a real implementation, redirect to search results page
+          alert('Search functionality would look for: "' + query + '". This is a demo.');
+        }
+      }
+
+      searchBtn.addEventListener('click', performSearch);
+      searchInput.addEventListener('keyup', function(e) {
+        if (e.key === 'Enter') performSearch();
+      });
+
+      // ----- SMOOTH SCROLL FOR NAV LINKS (if needed) -----
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const targetEl = document.querySelector(targetId);
+          if (targetEl) {
+            e.preventDefault();
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // ----- ACTIVE NAV STATE ON SCROLL (simple) -----
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.main-nav a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 120;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
